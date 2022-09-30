@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/products
+
+###
+
+GET http://localhost:3000/api/products/3
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "iphone 13",
+    "price": 1059,
+    "categoryId": 3
+}
+
+###
+DELETE http://localhost:3000/api/products/5
+
+###
+PATCH http://localhost:3000/api/products/3
+Content-Type: application/json
+
+{
+    "price": 5000,
+    "categoryId": 1
+}
